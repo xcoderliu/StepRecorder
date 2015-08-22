@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  StepRecorder
+
+  Created by 刘智民 on 15/8/15.
+  Copyright (c) 2015年 HiHex Limited. All rights reserved.
+*/
+"please_correct_data" = "请输入正确的数据";
+"add_success" = "添加成功";
+"add_failed" = "添加失败";
+"input_an_integer" = "请输入一个整数";
+"read_failed" = "读取信息失败";
+"delete" = "删除";
+"delete_failed" = "删除失败";
+"step_input" = "请输入步数";
+"step_num" = "步数";
+"add" = "添加";
+"steps_num_input" = "请输入计步器中的数字";
+"hours" = "小时";
+"minutes" = "分钟";
+"steps" = "步";
+"about" = "关于";
+"add_steps" = "添加步数";
+"history_steps" = "历史步数";
+"please_intput_less_than" = "请输入小于10000步";
+"exercise_duration" = "运动时长";
+"end_time" = "结束时间";
+"authoried_tip" = "请进入“健康” app，在“数据来源” > “计步神器” 中允许写入数据";

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--添加步数-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="HHAddStepsViewController" customModule="PedoRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGQ-Kt-iwJ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O7n-7q-g1L"/>
+                                </constraints>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="添加步数" id="3hf-xR-Lgk"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="elO-Ii-tgD">
+                                <rect key="frame" x="0.0" y="65" width="600" height="486"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qGQ-Kt-iwJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3OF-mD-jh6"/>
+                            <constraint firstAttribute="trailing" secondItem="qGQ-Kt-iwJ" secondAttribute="trailing" id="5se-RH-WBE"/>
+                            <constraint firstItem="qGQ-Kt-iwJ" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Djw-HD-iUi"/>
+                            <constraint firstItem="elO-Ii-tgD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="II4-LQ-ibS"/>
+                            <constraint firstItem="qGQ-Kt-iwJ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="YVm-9a-l9v"/>
+                            <constraint firstAttribute="trailing" secondItem="elO-Ii-tgD" secondAttribute="trailing" id="ciH-6q-Pue"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="elO-Ii-tgD" secondAttribute="bottom" id="mhW-ce-T7F"/>
+                            <constraint firstItem="elO-Ii-tgD" firstAttribute="top" secondItem="qGQ-Kt-iwJ" secondAttribute="bottom" constant="1" id="s57-J6-yq2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Djw-HD-iUi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="添加步数" image="tab_add_workout" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="_tableview" destination="elO-Ii-tgD" id="icW-ex-rvA"/>
+                        <outlet property="navBarItem" destination="3hf-xR-Lgk" id="9Sm-nC-PdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-660"/>
+        </scene>
+        <!--历史步数-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="HHHistoryViewController" customModule="PedoRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq2-nB-46r">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0A6-04-6Df"/>
+                                </constraints>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="历史步数" id="eVW-ym-U12"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="URe-dd-kF7">
+                                <rect key="frame" x="0.0" y="65" width="600" height="486"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="URe-dd-kF7" secondAttribute="trailing" id="7ts-Jg-WF3"/>
+                            <constraint firstItem="URe-dd-kF7" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="7zP-KI-tfg"/>
+                            <constraint firstItem="Gq2-nB-46r" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="KN1-z5-03F"/>
+                            <constraint firstItem="URe-dd-kF7" firstAttribute="top" secondItem="Gq2-nB-46r" secondAttribute="bottom" constant="1" id="Qfm-jl-8wR"/>
+                            <constraint firstAttribute="trailing" secondItem="Gq2-nB-46r" secondAttribute="trailing" id="ed7-qb-ZVv"/>
+                            <constraint firstItem="Gq2-nB-46r" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="oNB-de-3rN"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="URe-dd-kF7" secondAttribute="bottom" id="uJR-Bg-ndw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="历史步数" image="tab_history" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="_tableview" destination="URe-dd-kF7" id="ssQ-j9-fSx"/>
+                        <outlet property="navBarItem" destination="eVW-ym-U12" id="P3S-zo-KwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="0.0"/>
+        </scene>
+        <!--关于-->
+        <scene sceneID="25h-by-E0W">
+            <objects>
+                <viewController id="Jec-Q2-Sd0" customClass="HHAboutViewController" customModule="PedoRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hZm-l2-kRy"/>
+                        <viewControllerLayoutGuide type="bottom" id="IYF-GU-n31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kAg-aF-jQX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0s-qI-Xmc">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ylN-h6-yYE"/>
+                                </constraints>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="关于" id="gAj-91-URB"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j0s-qI-Xmc" firstAttribute="top" secondItem="hZm-l2-kRy" secondAttribute="bottom" id="LuT-mp-JJj"/>
+                            <constraint firstItem="j0s-qI-Xmc" firstAttribute="leading" secondItem="kAg-aF-jQX" secondAttribute="leading" id="po9-6I-sLg"/>
+                            <constraint firstAttribute="trailing" secondItem="j0s-qI-Xmc" secondAttribute="trailing" id="yLC-4i-La4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="关于" image="tab_about" id="ehA-Om-2QJ"/>
+                    <connections>
+                        <outlet property="navBar" destination="j0s-qI-Xmc" id="uEK-b7-giC"/>
+                        <outlet property="navBarItem" destination="gAj-91-URB" id="nCF-ck-5Ew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVk-jM-7Hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="668"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="HHRootViewController" customModule="PedoRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="_myTab" destination="W28-zg-YXA" id="CcP-fd-WJh"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Jec-Q2-Sd0" kind="relationship" relationship="viewControllers" id="ho8-Yj-tLL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_about" width="28" height="28"/>
+        <image name="tab_add_workout" width="28" height="28"/>
+        <image name="tab_history" width="28" height="28"/>
+    </resources>
+</document>

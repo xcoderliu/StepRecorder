@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  StepRecorder
+
+  Created by 刘智民 on 15/8/15.
+  Copyright (c) 2015年 HiHex Limited. All rights reserved.
+*/
+"CFBundleDisplayName" = "StepsRecorder";

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  StepRecorder
+
+  Created by 刘智民 on 15/8/15.
+  Copyright (c) 2015年 HiHex Limited. All rights reserved.
+*/
+"please_correct_data" = "Please input the correct data";
+"add_success" = "Added successfully";
+"add_failed" = "Added failed";
+"input_an_integer" = "Please input an integer";
+"read_failed" = "Read information failed";
+"delete" = "Delete";
+"delete_failed" = "Delete failed";
+"step_input" = "Please input your steps";
+"step_num" = "steps";
+"add" = "Add";
+"steps_num_input" = "Please input the number showed on your pedometer";
+"hours" = "hours";
+"minutes" = "minutes";
+"steps" = "steps";
+"about" = "About";
+"add_steps" = "Add steps";
+"history_steps" = "Steps history";
+"please_intput_less_than" = "please input less than 10000 steps";
+"exercise_duration" = "exercise duration";
+"end_time" = "end time";
+"authoried_tip" = "please go to \"source\" >\"StepRecorder\" in the \"Health\" app,  allow StepRecorder to write data.";
